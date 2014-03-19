@@ -1,0 +1,10 @@
+servers:
+    - name: Freenode
+      profile: freenode-ssl
+      channels:
+        - #southlondonmakerspace
+apps:
+    - default
+database:
+    type: mongodb
+    name: makerbot
