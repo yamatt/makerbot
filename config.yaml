@@ -3,6 +3,10 @@ servers:
       profile: freenode-ssl
       channels:
         - #southlondonmakerspace
+      nick: Makerbot
+      userName: Makerbot
+      realName: IRC bot for #southlondonmakerspace
+      password: anything
 apps:
     - default
 database:

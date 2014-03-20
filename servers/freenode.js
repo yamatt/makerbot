@@ -15,10 +15,10 @@ module.exports = {
         sasl: false,
         stripColors: false,
         channelPrefixes: "&#",
-        messageSplit: 512
+        messageSplit: 512,
     },
-    authentication: function(client, password) {
+    authentication: function(client) {
         // function called when client wants to authenticate
-        
+        client.say("NickServ", "identify " + this.nick + " " + this.password);
     }
 }
