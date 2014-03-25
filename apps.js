@@ -1,12 +1,11 @@
 module.exports = function (app_list, db) {
 
     this.load = function(app_list, db) {
-        var apps = [];
+        this.apps = [];
         app_list.forEach(function (app_name) {
             var app = require(__dirname + "/apps/" + app_name)(db);
-            apps.push(app);
-        });
-        this.apps = apps;
+            this.apps.push(app);
+        }, this);
     }
     
     this.reload = function (app_list, db) {

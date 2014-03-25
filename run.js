@@ -21,8 +21,10 @@ var db = Database(config.database);
 
 var apps = Apps(config.apps, db);
 
-var servers = Servers(config.servers, apps);
+console.log(apps);
 
-servers.connections.forEach(function (connection) {
-    connection.client.connect();
+Servers(config.servers, apps, function(servers) {
+    //servers.connect();
 });
+
+

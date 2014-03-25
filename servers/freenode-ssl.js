@@ -1,7 +1,7 @@
 var freenode = require("./freenode");
 
-freenode.config.secure = true;
-freenode.config.port = 7000;
+freenode.secure = true;
+freenode.port = 7000;
 
 module.exports = freenode
 
