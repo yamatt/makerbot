@@ -1,4 +1,4 @@
-module.exports = function(db) {
+module.exports.app = function(db) {
     this.db = db;
     
     this.register = function(connection, config) {
